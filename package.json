@@ -12,7 +12,7 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^2.4.5",
+    "astro": "^6.4.6",
     "astro-relative-links": "^0.4.2"
   }
 }
