@@ -1,4 +1,6 @@
 ---
+import '../styles/global.css';
+
 const pageTitle = "わたしについて";
 
 const identity = {
@@ -17,6 +19,8 @@ const goal = 3;
 const skillColor = "crimson";
 const fontWeight = "bold";
 const textCase = "uppercase";
+
+const catName = "Grey";
 ---
 
 <html lang="ja">
@@ -67,5 +71,6 @@ const textCase = "uppercase";
 		<ul>
 			{skills.map((skill) => <li class="skill">{skill}</li>)}
 		</ul>
+		<p>わたしは{catName}というネコと暮らしています。</p>
 	</body>
 </html>
