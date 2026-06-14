@@ -1,4 +1,6 @@
 ---
+import Navigation from '../components/Navigation.astro';
+import Footer from '../components/Footer.astro';
 import '../styles/global.css';
 
 const pageTitle = "わたしについて";
@@ -44,9 +46,7 @@ const catName = "Grey";
 		</style>
 	</head>
 	<body>
-		<a href="/">Home</a>
-		<a href="/about/">About</a>
-		<a href="/blog/">Blog</a>
+		<Navigation />
 
 		<h1>{pageTitle}</h1>
 		<h2>... そして私の新しいAstroサイトについて！</h2>
@@ -72,5 +72,7 @@ const catName = "Grey";
 			{skills.map((skill) => <li class="skill">{skill}</li>)}
 		</ul>
 		<p>わたしは{catName}というネコと暮らしています。</p>
+
+		<Footer />
 	</body>
 </html>
